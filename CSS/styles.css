@@ -1,0 +1,212 @@
+/* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+
+
+* {
+    padding: 0px;
+    margin: 0px;    
+}
+
+body {
+    background-color: #ffffff; 
+}
+
+.menu {
+    width: 100%;
+    height: 68px;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #7b113a;
+    
+}
+    
+.menu ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: right;   
+    padding: 0 20px;
+    
+}
+
+.menu a {
+    color: #e2d5d5;
+    display: block;
+    padding: 15px 55px;
+    background-color: #7b113a;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    background-color: #7b113aa2;
+}
+
+
+
+.menu ul ul{
+    display: none;
+    position: absolute;
+}
+
+
+.menu ul li:hover ul{
+    display: block;
+}
+
+.menu ul li {
+    font-size: 25px;
+}
+
+.menu ul li ul li{
+    font-size: 20px;    
+}
+
+.submenu_1 li a{
+    padding: 10px 30px;
+}
+
+.submenu_2 li a{
+    padding: 10px 20px;
+}
+
+.submenu_3 li a{
+    padding: 10px 30px;
+}
+
+
+.menu figure img{
+    width: 70px;
+    margin: 0;
+    position: absolute;
+    left: 30px;
+    cursor: pointer;
+    
+}
+
+.Portada_Principal h1 {
+    color:#7b113aa2;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: left;
+    margin: 20px 0;
+    padding: 50px 10px;
+    font-size: 3em;
+}
+
+.portada {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.contact {
+    display: flex;
+    justify-content: left;
+}
+.container_contact {
+    display: flex;
+    justify-content: space-between;
+
+}
+.title_contact {
+    color:#7b113aa2;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;     
+    margin: 20px 0;
+    padding: 50px 10px;
+    font-size: 50px;
+    
+}
+
+.formulary-contact{
+    background-color: #7b113ada;
+    width: 35%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px black;   
+    margin: 0 20px;
+    height: 250px;
+    
+}
+
+.formulary-contact label{
+    margin:20px;        
+    color: rgb(37, 7, 7);
+    font-size: 20px;
+    padding: 30px 0;;
+}
+input[type=text] {
+    width: 90%;
+    height: 10%;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 90%;
+    height: 20%;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button_Formulary{
+    border-radius: 10px 10px; 
+    box-shadow: 0px 0px 2px rgb(196, 50, 50);
+    padding: 5px; 
+    margin: 0 230px;    
+    background-color: #7b113ada;
+    color: #f9f871;
+    font-family: 'Fjalla One', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #000000;    
+    width: 100%; 
+    height: 70px;
+    margin: 50px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+}  
+
+.footer-detail{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-detail p{
+    color: white;
+    font-family: 'Fjalla One', sans-serif;    
+    font-size: 20px;
+    margin: 25px 0;
+    
+}
+
+
+.footer-detail img{
+    margin: 3px;
+    text-align: center;
+}
+
+.redes{
+    width: 20%;
+    display: flex;
+    justify-content: right;
+}
+
+.redes a{
+    margin: auto;
+}
+
+.redes a img{
+    height: 50px;
+}
