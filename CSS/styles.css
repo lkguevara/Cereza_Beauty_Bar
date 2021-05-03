@@ -7,94 +7,196 @@
 }
 
 body {
-    background-color: #ffffff; 
+    background-color: #f8f5f1; 
 }
 
 .menu {
     width: 100%;
     height: 68px;
     margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-around;
-    background-color: #7b113a;
-    
+    background-color: #7b113a;    
 }
+
+.menu_navegation{
+    width: 35%;
+    display: flex;
+    align-items: center;   
+}
+
+.menu_navegation img{
+    width: 30px;
+    padding: 10px;
+}
+
     
-.menu ul{
+.menu_navegation ul{
     list-style: none;
     text-decoration: none;
     display: flex;
     justify-content: right;   
-    padding: 0 20px;
+    padding: 0 10px;
     
 }
 
-.menu a {
+.menu_navegation a {
     color: #e2d5d5;
     display: block;
-    padding: 15px 55px;
+    padding: 15px 15px;
     background-color: #7b113a;
     text-decoration: none;
+    font-size: 18px;
+    font-family: "Francois One", sans-serif;
+    font-weight: 600;   
 }
 
-.menu a:hover{
+.menu_navegation a:hover{
     background-color: #7b113aa2;
 }
 
-
-
-.menu ul ul{
+.menu_navegation ul ul{
     display: none;
     position: absolute;
 }
 
 
-.menu ul li:hover ul{
+.menu_navegation ul li:hover ul{
     display: block;
 }
 
-.menu ul li {
-    font-size: 25px;
-}
 
-.menu ul li ul li{
+.menu_navegation ul li ul li{
     font-size: 20px;    
 }
 
 .submenu_1 li a{
-    padding: 10px 30px;
+    padding: 10px 10px;
+    width: 76px;
 }
 
 .submenu_2 li a{
-    padding: 10px 20px;
+    padding: 10px 10px;
+    width: 65px;
 }
 
 .submenu_3 li a{
-    padding: 10px 30px;
+    padding: 10px 10px;
+    width: 110px;
 }
 
 
-.menu figure img{
-    width: 70px;
-    margin: 0;
-    position: absolute;
-    left: 30px;
-    cursor: pointer;
+.menu_logo{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
     
 }
 
-.Portada_Principal h1 {
-    color:#7b113aa2;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: left;
-    margin: 20px 0;
-    padding: 50px 10px;
-    font-size: 3em;
+.menu_logo h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #e2d5d5;
+    font-size: 22px;
 }
 
-.portada {
+.menu_logo img{
+    width: 40px;
+    height: 40px;
+}
+
+.menu_search{
+    width: 35%;
+    display: flex;
+    align-items: center;   
+    margin: 0;
+}
+
+.menu_search input{
+    width: 220px;
+    height: 30px;
+    position: absolute; 
+    right: 170px;
+    top: 5px;
+
+}
+
+.logo{
+    width: 30px;
+    height: 30px;
+    padding: 8px 10px;
+    position: absolute;
+    right: 190px;
+    top: 10px;
+}
+
+.carrito{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    position: absolute;
+    right: 100px;
+    top: 10px;
+}
+
+.perfil{
+    width: 30px;
+    padding: 10px;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+.envios{
+    display: flex;
+    justify-content: center;
+}
+
+.envios img{
+    width: 20px;
+    border-radius: 20px;
+}
+
+.envios p{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(168, 42, 42);
+    font-size: 18px;text-align: center;
+    background-color: #f8f5f1; 
+    letter-spacing: -1px;    
+    padding: 0 20px 0 0;
+    
+}
+
+.portada_principal img{
+    width: 1349px;
+}
+
+.whatsapp img{
+    width: 60px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    
+}
+
+.container_recomendation{
+    font-family: "Francois One", sans-serif;
+    font-size: 30px;
+    margin: 30px 0;
+    text-align: center;    
+}
+
+.container_recomendation h1{
+    color: #7b113a;
+    font-size: 40px;
+}
+
+.recomandation {
     display: flex;
     justify-content: space-around;
+    margin-top: 40px;
     
 }
 
@@ -109,9 +211,9 @@ body {
 }
 .title_contact {
     color:#7b113aa2;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;     
-    margin: 20px 0;
-    padding: 50px 10px;
+    font-family: "Francois One", sans-serif;    
+    margin: 0 20px;
+    padding: 30px 10px;
     font-size: 50px;
     
 }
@@ -132,15 +234,16 @@ body {
     font-size: 20px;
     padding: 30px 0;;
 }
-input[type=text] {
+input{
     width: 90%;
     height: 10%;
-    padding: 12px 20px;
-    margin: 8px 20px;
+    padding: 15px 20px;
+    margin: 13px 20px;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-size: 15px;
 }
 
 textarea {
@@ -152,16 +255,17 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-size: 15px;
 }
 
 .button_Formulary{
     border-radius: 10px 10px; 
     box-shadow: 0px 0px 2px rgb(196, 50, 50);
-    padding: 5px; 
-    margin: 0 230px;    
+    padding: 10px; 
+    margin: 13px 370px;    
     background-color: #7b113ada;
     color: #f9f871;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: "Francois One", sans-serif;
     text-decoration: none;
     text-align: center;
     font-size: 15px;
@@ -169,44 +273,449 @@ textarea {
 }
 
 .footer {
-    background-color: #000000;    
+    background-color: white; 
     width: 100%; 
-    height: 70px;
+    height: 250px;
     margin: 50px 0 0 0;
     display: flex;
-    justify-content: space-around;
 }  
 
-.footer-detail{
-    width: 80%;
+.footer-name{
+    width: 20%;
     display: flex;
-    justify-content: space-between;
-}
-
-.footer-detail p{
-    color: white;
-    font-family: 'Fjalla One', sans-serif;    
-    font-size: 20px;
-    margin: 25px 0;
+    align-items: center;
     
 }
 
-
-.footer-detail img{
-    margin: 3px;
+.footer-name p{
+    color: #7b113a;
+    font-family: "Francois One", sans-serif;    
+    font-size: 20px;
+    margin: 25px 0 0 0;    
     text-align: center;
 }
 
-.redes{
-    width: 20%;
-    display: flex;
-    justify-content: right;
-}
 
-.redes a{
-    margin: auto;
-}
-
-.redes a img{
+.footer-name img{
+    margin: 0;
+    padding: 10px 0 0 10px;
+    width: 50px;
     height: 50px;
+   
+}
+
+.footer-attention{
+    width: 20%;
+    color: #7b113a;
+    font-size: 20px;
+    padding: 20px 0;
+    justify-content: center;
+    
+}
+
+.footer-attention h3{
+    font-family: "Francois One", sans-serif;
+}
+
+.footer-attention p{
+    padding: 10px 0;   
+    margin: 20px 0;
+
+}
+
+.footer-attention p a{
+    font-family: 'PT Sans', sans-serif;
+    text-decoration: none;
+    color: #7b113a;   
+}
+
+.footer-US{
+    width: 20%;
+    color: #7b113a;
+    font-size: 20px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-US h3{
+    font-family: "Francois One", sans-serif;
+}
+
+.footer-US p{
+    padding: 10px 0; 
+    margin: 20px 0;  
+
+}
+
+.footer-US p a{
+    font-family: 'PT Sans', sans-serif;
+    text-decoration: none;
+    color: #7b113a;   
+}
+
+.footer_pay{
+    width: 20%;
+    color: #7b113a;
+    font-size: 20px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer_pay h3{
+    font-family: "Francois One", sans-serif;
+}
+
+.footer_pay img{
+    width: 200px;
+    /* background-color: white; */
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.redes{
+    width: 25%;
+    color: #7b113a;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.container_redes{
+    display: flex;
+    justify-content: center;
+}
+
+.container_redes img{
+    height: 40px;
+    margin: 10px;
+    margin-top: 20px;
+    padding:  0 10px;
+}
+
+.redes h3{
+    color: #7b113a;
+    font-family: "Francois One", sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ************MEDIA QUERIES******************************* */
+/* ****************************1024*************************** */
+@media screen and (max-width:1024px){
+
+    .menu_navegation img{
+        width: 30px;
+        padding: 10px;
+    }
+
+    .menu_navegation ul a{
+        padding: 8px;   
+    }
+
+    .menu_logo {
+        width: 35%;
+    }
+
+    .menu_search input{
+        width: 200px;
+        right: 100px;
+        top: 5px;
+
+    }
+
+    .logo{
+        position: absolute;
+        right: 120px;
+        top: 10px;
+    }
+
+    .carrito{
+        position: absolute;
+        right: 60px;
+        top: 10px;
+        width: 30px;
+    }
+
+    .perfil{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 30px;
+    }
+
+    .envios p{
+        padding: 0 20px;
+    }
+
+    .portada_principal img{
+        width: 1020px;
+    }
+
+    .whatsapp img{
+        width: 50px;
+        padding: 20px 20px 0 20px;
+        position: fixed;
+        bottom: 30px;
+    }
+
+    .Portada_1 img{
+        width: 474px;
+        height: 500px;
+    }
+
+    .Portada_2 img{
+        width: 474px;
+    }   
+
+    .footer-attention p{
+        padding: 5px;
+    }
+}
+
+
+/* ****************************767*************************** */
+@media screen and (max-width:767px){
+    
+    .menu_navegation{
+        width: 45%;
+    }
+    
+    .menu_navegation img{
+        width: 25px;
+        padding: 10px;
+    }
+
+    .menu_navegation ul a{
+        padding: 5px;
+        font-size: 15px;   
+    }
+
+    .menu_logo {
+        width: 25%;
+    }
+
+    .menu_logo h1{
+        font-size: 18px;
+        text-align: center;
+        justify-content: center;
+        
+    }
+
+    .menu_search input{
+        width: 100px;
+        right: 100px;
+        top: 5px;
+        font-size: 13px;
+
+    }
+
+    .logo{
+        position: absolute;
+        right: 120px;
+        top: 10px;
+        width: 25px;
+        padding: 8px 0;
+    }
+
+    .carrito{
+        position: absolute;
+        right: 60px;
+        top: 10px;
+        width: 30px;
+    }
+
+    .perfil{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 30px;
+    }
+
+    .envios p{
+        padding: 0 20px 0 60px;
+    }
+    .portada_principal img{
+        width: 760px;
+    }
+
+    .whatsapp img{
+        width: 50px;
+        padding: 20px 20px 0 20px;
+        position: fixed;
+        bottom: 30px;
+    }
+
+    .container_recomendation h1{
+        font-size: 35px;
+    }
+
+    .Portada_1 img{
+        width: 350px;
+        height: 369px;
+    }
+
+    .Portada_2 img{
+        width: 350px;
+    } 
+
+    .footer{
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .footer-name{
+        width: 30%;
+        margin-right: 30px;
+        padding: 20px 0;
+    }
+
+    .footer-name p{
+        font-size: 25px;
+    }
+
+    .footer-attention{
+        width: 25%;
+        padding: 20px;
+    }
+    .footer-US{
+        width: 30%;
+        padding: 20px;
+    }
+
+    .footer_pay{
+        width: 30%;
+        padding: 20px 0 0 250px;
+    }
+
+    .redes{
+        width: 20%;
+        padding: 20px 50px;
+    }
+
+}
+
+
+/* ****************************480*************************** */
+@media screen and (max-width:480px){
+    .menu_navegation{
+        width: 45%;
+    }
+    
+    .menu_navegation img{
+        width: 25px;
+        padding: 10px;
+    }
+
+    .menu_navegation ul a{
+        padding: 5px;
+        font-size: 15px;   
+    }
+
+    .menu_logo {
+        width: 25%;
+    }
+
+    .menu_logo h1{
+        font-size: 18px;
+        text-align: center;
+        justify-content: center;
+        
+    }
+
+    .menu_search input{
+        width: 100px;
+        right: 100px;
+        top: 5px;
+        font-size: 13px;
+
+    }
+
+    .logo{
+        position: absolute;
+        right: 120px;
+        top: 10px;
+        width: 25px;
+        padding: 8px 0;
+    }
+
+    .carrito{
+        position: absolute;
+        right: 60px;
+        top: 10px;
+        width: 30px;
+    }
+
+    .perfil{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 30px;
+    }
+
+    .envios p{
+        padding: 0 20px 0 60px;
+    }
+    .portada_principal img{
+        width: 470px;
+    }
+
+    .whatsapp img{
+        width: 50px;
+        padding: 20px 20px 0 20px;
+        position: fixed;
+        bottom: 30px;
+    }
+
+    .container_recomendation h1{
+        font-size: 35px;
+    }
+
+    .Portada_1 img{
+        width: 230px;
+        height: 242px;
+    }
+
+    .Portada_2 img{
+        width: 230px;
+    } 
+
+    .footer{
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .footer-name{
+        width: 30%;
+        margin-right: 30px;
+        padding: 20px 0;
+    }
+
+    .footer-name p{
+        font-size: 25px;
+    }
+
+    .footer-attention{
+        width: 25%;
+        padding: 20px;
+    }
+    .footer-US{
+        width: 30%;
+        padding: 20px;
+    }
+
+    .footer_pay{
+        width: 30%;
+        padding: 20px 0 0 250px;
+    }
+
+    .redes{
+        width: 20%;
+        padding: 20px 50px;
+    }
+}
+
+
+/* ****************************320*************************** */
+
+@media screen and (max-width:320px){
+
 }
