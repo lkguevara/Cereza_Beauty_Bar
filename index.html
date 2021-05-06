@@ -12,14 +12,17 @@
    
 </head>
 <body>
+    <div class="hamburguer">
+    <img  src="img/menu.png" alt="menu">
+    </div>
+
     <header >
                
         <nav class="menu"> 
 
-            <div class="menu_navegation">
-                <img src="img/menu.png" alt="menu">            
+            <div>                           
 
-                <ul>
+                <ul class="menu_navegation">
                     <li class="submenu_1"><a href="#">HOMBRE</a>
                         <ul>
                             <li><a class="link" href="#">Camisetas</a></li>
@@ -131,7 +134,24 @@
     </footer>
     
     <script>
+        const menu_hamburguer = document.querySelector(".menu_navegation");       
         
+        const button_hamburguer = document.querySelector(".hamburguer") 
+
+        
+        button_hamburguer.addEventListener("click",WatchHiden);
+
+        menu_hamburguer.classList.add("menu_active");
+
+        function WatchHiden(){
+            if(menu_hamburguer.classList.contains("menu_active")){
+                menu_hamburguer.classList.remove("menu_active")
+            }
+            else{
+                menu_hamburguer.classList.add("menu_active")
+            }
+        }
+    </script>
     </script>
 
  </body>

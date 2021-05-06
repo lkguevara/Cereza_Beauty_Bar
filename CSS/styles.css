@@ -10,6 +10,10 @@ body {
     background-color: #f8f5f1; 
 }
 
+.hamburguer{
+    display: none;
+}
+
 .menu {
     width: 100%;
     height: 68px;
@@ -20,19 +24,7 @@ body {
     background-color: #7b113a;    
 }
 
-.menu_navegation{
-    width: 35%;
-    display: flex;
-    align-items: center;   
-}
-
-.menu_navegation img{
-    width: 30px;
-    padding: 10px;
-}
-
-    
-.menu_navegation ul{
+.menu ul{
     list-style: none;
     text-decoration: none;
     display: flex;
@@ -41,7 +33,7 @@ body {
     
 }
 
-.menu_navegation a {
+.menu a {
     color: #e2d5d5;
     display: block;
     padding: 15px 15px;
@@ -52,22 +44,22 @@ body {
     font-weight: 600;   
 }
 
-.menu_navegation a:hover{
+.menu a:hover{
     background-color: #7b113aa2;
 }
 
-.menu_navegation ul ul{
+.menu ul ul{
     display: none;
     position: absolute;
 }
 
 
-.menu_navegation ul li:hover ul{
+.menu ul li:hover ul{
     display: block;
 }
 
 
-.menu_navegation ul li ul li{
+.menu ul li ul li{
     font-size: 20px;    
 }
 
@@ -334,7 +326,7 @@ textarea {
     color: #7b113a;
     font-size: 20px;
     padding: 20px 0;
-    text-align: center;
+    text-align: left;
 }
 
 .footer-US h3{
@@ -358,7 +350,7 @@ textarea {
     color: #7b113a;
     font-size: 20px;
     padding: 20px 0;
-    text-align: center;
+    text-align: left;
 }
 
 .footer_pay h3{
@@ -475,45 +467,81 @@ textarea {
 /* ****************************767*************************** */
 @media screen and (max-width:767px){
     
-    .menu_navegation{
-        width: 45%;
-    }
-    
-    .menu_navegation img{
-        width: 25px;
-        padding: 10px;
+    .hamburguer{
+        display: flex;
+        z-index: 20;
+        position: fixed; 
+        width: 10%;       
     }
 
-    .menu_navegation ul a{
-        padding: 5px;
-        font-size: 15px;   
+    .menu_navegation{
+        width: 0%;
+    }
+
+    .hamburguer img{
+        width: 50px;
+        padding: 10px;
+    }
+    .menu_navegation{
+        display: block;
+        position: fixed;   
+        left: -100vh;  
+        top: 0px;     
+        width: 25%;
+        margin: 0;
+        padding: 40px 0;
+        height: 100vh;
+        z-index: 10;
+        transition: all 1s ease;
+        background: #fffbd5;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #b20a2c, #fffbd5);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #b20a2c, #fffbd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+    }
+
+    .menu_active{
+        left: 0;        
+    }
+
+    .menu ul{
+        display: block;
+    }
+
+    .menu ul a{
+        background-color: transparent;
+        color: black;
+        padding: 20px 50px;
+        margin: 60px 0;
+        text-align: center;   
+    }
+
+    .menu_navegation a:hover{
+        background-color: transparent;
     }
 
     .menu_logo {
-        width: 25%;
+        width: 80%;
+        margin-left: 150px;
+
     }
 
     .menu_logo h1{
-        font-size: 18px;
+        font-size: 25px;
         text-align: center;
         justify-content: center;
         
     }
 
+    .menu_search{
+        width: 10%;
+    }
+
     .menu_search input{
-        width: 100px;
-        right: 100px;
-        top: 5px;
-        font-size: 13px;
+        display: none;
 
     }
 
     .logo{
-        position: absolute;
-        right: 120px;
-        top: 10px;
-        width: 25px;
-        padding: 8px 0;
+        display: none;
     }
 
     .carrito{
@@ -521,6 +549,7 @@ textarea {
         right: 60px;
         top: 10px;
         width: 30px;
+        padding: 0;
     }
 
     .perfil{
@@ -528,10 +557,12 @@ textarea {
         right: 10px;
         top: 10px;
         width: 30px;
+        padding: 0;
     }
 
     .envios p{
         padding: 0 20px 0 60px;
+        font-size: 15px;
     }
     .portada_principal img{
         width: 760px;
@@ -563,9 +594,10 @@ textarea {
     }
 
     .footer-name{
-        width: 30%;
-        margin-right: 30px;
-        padding: 20px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
     }
 
     .footer-name p{
@@ -573,22 +605,28 @@ textarea {
     }
 
     .footer-attention{
-        width: 25%;
-        padding: 20px;
+        width: 100%;
+        margin-left: 30px;
     }
     .footer-US{
-        width: 30%;
-        padding: 20px;
+        width: 100%;
+        margin-left: 30px;       
     }
 
     .footer_pay{
-        width: 30%;
-        padding: 20px 0 0 250px;
+        width: 100%;
+        margin-left: 30px; 
     }
 
     .redes{
-        width: 20%;
-        padding: 20px 50px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    .redes h3{
+        margin: 0;
     }
 
 }
