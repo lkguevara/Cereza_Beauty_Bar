@@ -389,19 +389,34 @@ textarea {
 /* ****************************1024*************************** */
 @media screen and (max-width:1024px){
 
-    .menu_navegation img{
-        width: 30px;
-        padding: 10px;
+    .menu{
+        height: 70px;
+    }
+    .menu_navegation{
+        width: 45%;
+        display: inline-flex;
     }
 
-    .menu_navegation ul a{
-        padding: 8px;   
+    .menu ul li a{
+        padding: 20px 10px 30px 10px;
+        font-size: 17px;
     }
 
+    
     .menu_logo {
-        width: 35%;
+        width: 20%;
     }
 
+    .menu_logo h1{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .menu_search{
+        width: 40%;
+    }
+
+    
     .menu_search input{
         width: 200px;
         right: 100px;
@@ -434,7 +449,7 @@ textarea {
     }
 
     .portada_principal img{
-        width: 1020px;
+        width: calc(100%);
     }
 
     .whatsapp img{
@@ -445,16 +460,43 @@ textarea {
     }
 
     .Portada_1 img{
-        width: 474px;
-        height: 500px;
+        width: calc(100%);
+        height: auto;
     }
 
     .Portada_2 img{
-        width: 474px;
+        width: calc(100%);
+        height: auto;
     }   
 
     .footer-attention p{
         padding: 5px;
+    }
+}
+
+/* ****************************980*************************** */
+@media screen and (max-width:980px){
+
+    .menu ul li a{
+        padding: 20px 5px 30px 10px;
+        font-size: 15px;
+    }
+
+    
+    .menu_logo {
+        width: 20%;
+    }
+
+    .menu_logo h1{
+        font-size: 19px;
+        text-align: center;
+    }
+
+    .menu_search input{
+        width: 150px;
+        right: 100px;
+        top: 5px;
+
     }
 }
 
@@ -467,7 +509,7 @@ textarea {
         z-index: 20;
         position: fixed; 
         top: 18px;
-        left: 30px;
+        left: 20px;
         height: 30px;
         width: 35px;
         text-align: center;
@@ -591,13 +633,14 @@ textarea {
     }
 
     .menu_navegation li{
-        width: 192px;
+        width: calc(100%);
         margin-top: 0px;
     }
         
     .menu ul li a {
         color: #110303;
-        display: block;        
+        display: block;   
+        width: calc(100%);     
     }
 
     .men-btn{
@@ -611,7 +654,7 @@ textarea {
     }
 
     .menu_logo h1{
-        font-size: 25px;
+        font-size: 23px;
         text-align: center;
         justify-content: center;
         
@@ -652,10 +695,6 @@ textarea {
         padding: 0 20px 0 60px;
         font-size: 15px;
     }
-    .portada_principal img{
-        width: 760px;
-    }
-
     .whatsapp img{
         width: 50px;
         padding: 20px 20px 0 20px;
@@ -666,15 +705,6 @@ textarea {
     .container_recomendation h1{
         font-size: 35px;
     }
-
-    .Portada_1 img{
-        width: 350px;
-        height: 369px;
-    }
-
-    .Portada_2 img{
-        width: 350px;
-    } 
 
     .footer{
         flex-wrap: wrap;
@@ -710,138 +740,80 @@ textarea {
         width: 100%;
         padding: 0;
         margin: 0;
+        background-color: black;
         
     }
 
     .redes h3{
         margin: 0;
     }
-
 }
 
+/* ****************************696*************************** */
+@media screen and (max-width:696px){
+    .menu_navegation{
+        width: 30%;
+    }
+
+    .men-btn span{
+        left: 13px;        
+    }
+
+    .women-btn span{
+        left: 15px;
+    }
+
+    .it-btn span{
+        left: 0;
+    }
+
+    .menu_logo{
+        margin-left: 100px;
+        
+    }
+
+    .menu_logo h1{
+        font-size: 20px;
+    }
+
+    .carrito{
+        width: 25px;
+        height: 25px;
+    }
+
+    .perfil{
+        width: 25px;
+        height: 25px;
+    }
+
+}
 
 /* ****************************480*************************** */
 @media screen and (max-width:480px){
     .menu_navegation{
-        width: 45%;
+        width: 30%;
     }
     
-    .menu_navegation img{
-        width: 25px;
-        padding: 10px;
-    }
-
-    .menu_navegation ul a{
-        padding: 5px;
-        font-size: 15px;   
-    }
-
-    .menu_logo {
-        width: 25%;
-    }
-
-    .menu_logo h1{
-        font-size: 18px;
-        text-align: center;
-        justify-content: center;
-        
-    }
-
-    .menu_search input{
-        width: 100px;
-        right: 100px;
-        top: 5px;
-        font-size: 13px;
-
-    }
-
-    .logo{
-        position: absolute;
-        right: 120px;
-        top: 10px;
-        width: 25px;
-        padding: 8px 0;
-    }
-
-    .carrito{
-        position: absolute;
-        right: 60px;
-        top: 10px;
-        width: 30px;
+    .menu_logo{
+        margin-left: 50px;        
     }
 
     .perfil{
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        width: 30px;
+        display: none;
     }
-
-    .envios p{
-        padding: 0 20px 0 60px;
+    .carrito{
+        right: 20px;
     }
-    .portada_principal img{
-        width: 470px;
-    }
-
-    .whatsapp img{
-        width: 50px;
-        padding: 20px 20px 0 20px;
-        position: fixed;
-        bottom: 30px;
-    }
-
-    .container_recomendation h1{
-        font-size: 35px;
-    }
-
-    .Portada_1 img{
-        width: 230px;
-        height: 242px;
-    }
-
-    .Portada_2 img{
-        width: 230px;
-    } 
-
-    .footer{
-        flex-wrap: wrap;
-        height: auto;
-    }
-
-    .footer-name{
-        width: 30%;
-        margin-right: 30px;
-        padding: 20px 0;
-    }
-
-    .footer-name p{
-        font-size: 25px;
-    }
-
-    .footer-attention{
-        width: 25%;
-        padding: 20px;
-    }
-    .footer-US{
-        width: 30%;
-        padding: 20px;
-    }
-
-    .footer_pay{
-        width: 30%;
-        padding: 20px 0 0 250px;
-    }
-
-    .redes{
-        width: 20%;
-        padding: 20px 50px;
-    }
-}
 
 
 /* ****************************320*************************** */
 
 @media screen and (max-width:320px){
+    .menu_navegation{
+        width: 40%;
+    }
 
+    .menu ul li a{
+        padding: 20px 0;
+    }
 }
