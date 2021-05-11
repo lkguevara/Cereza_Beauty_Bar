@@ -87,7 +87,7 @@
             </figure>
 
             <figure class = "Portada_2">
-                <img src="img/portada_2.JPG" alt="Foto2">
+                <img src="img/Portada_2.JPG" alt="Foto2">
             </figure>
         </div>
     </section>
@@ -151,6 +151,11 @@
                 menu_hamburguer.classList.add("menu_active")
             }
         }
+
+
+        $(".hamburguer").click(function(){
+        $(this).toggleClass("click");
+     });   
 
         $(".submenu_1").click(function(){
             $(this).children(".children").slideToggle();
