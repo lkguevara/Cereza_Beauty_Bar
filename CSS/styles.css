@@ -448,6 +448,26 @@ textarea {
     font-weight: 600;
 }
 
+.page_content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.product_container{
+   margin: 50px;
+}
+
+.product_container img{
+    height: 200px;
+    width: 200px;
+    padding: 30px;
+    border-radius: 20%;
+
+    
+}
+
 /* ************MEDIA QUERIES******************************* */
 /* ***********************************************1024**************************************************************************** */
 @media screen and (max-width:1024px){
@@ -908,7 +928,7 @@ textarea {
     .menu_navegation{
         width:80%
     }
-
+}
 /* ***********************************************320**************************************************************************** */
 
 @media screen and (max-width:320px){
@@ -939,7 +959,4 @@ textarea {
     .menu_logo{
         margin-left: 70px;
     }
-
-    
-    
 }
