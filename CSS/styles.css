@@ -29,6 +29,10 @@ body {
     justify-content: space-around;       
 }
 
+.menu_navigation{
+    width: 60%;
+}
+
 .menu ul {
     list-style: none;
 }
@@ -94,7 +98,7 @@ body {
 }
 
 .menu_search{
-    width: 40%;
+    width: 30%;
     display: flex;
     align-items: center;   
     margin: 0;
@@ -299,6 +303,7 @@ textarea {
     font-size: 20px;
     padding: 20px 0;
     justify-content: center;
+    margin-left: 40px;
     
 }
 
@@ -308,7 +313,7 @@ textarea {
 
 .footer-attention p{
     padding: 10px 0;   
-    margin: 20px 0;
+    margin: 10px 0;
 
 }
 
@@ -316,6 +321,12 @@ textarea {
     font-family: 'PT Sans', sans-serif;
     text-decoration: none;
     color: #7b113a;   
+}
+
+.atention{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .footer-US{
@@ -446,6 +457,7 @@ textarea {
     }
     .menu_navegation{
         width: 45%;
+        padding-left: 30px;
         display: inline-flex;
     }
 
@@ -576,7 +588,7 @@ textarea {
         font-size: 28px;
         line-height: 30px;
         cursor: pointer;
-        padding-left: 5px;
+        padding-left: 4px;
     }
 
     .hamburguer.click{
@@ -594,9 +606,9 @@ textarea {
         left: 60px;
         justify-content: center;
         z-index: 20;
-        color: crimson;
+        color: rgb(2, 1, 1);
         font-size: 25px;
-        font-weight: 600; /*Peso letra*/
+        font-weight: 700; /*Peso letra*/
         line-height: 65px; /*Interlineado*/
         letter-spacing: 1px; /*Espaciado de las letras*/
         
@@ -618,9 +630,10 @@ textarea {
         height: calc(100%);
         z-index: 10;
         transition: all 1s ease;
-        background: #ee9ca7;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-color:white;
+        /* background: #ee9ca7;  fallback for old browsers */
+        /* background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  Chrome 10-25, Safari 5.1-6 */
+        /* background: linear-gradient(to right, #ffdde1, #ee9ca7); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
     }
@@ -682,7 +695,7 @@ textarea {
     }
 
     .menu ul li .children {
-        background-color: rgb(197, 136, 148);
+        background-color: rgb(255, 255, 255);
         width: 100%;
         position: relative;        
     }
@@ -693,9 +706,13 @@ textarea {
 
     .menu ul li{
         line-height: 0px;
-        border-bottom: 1px solid #efefef;
+        border-bottom: 2px solid #d6d5d5;
         color: black;
         text-align: center;
+    }
+    .menu ul li a{
+        border-bottom: 0.5px solid #f0eeee;
+       
     }
 
     .menu_navegation li{
@@ -792,15 +809,24 @@ textarea {
     .footer-attention{
         width: 100%;
         margin-left: 30px;
+        text-align: center;
     }
-    .footer-US{
+    
+
+    .atention{
         width: 100%;
-        margin-left: 30px;       
+        display: flex;
+        justify-content: space-around;
     }
 
     .footer_pay{
         width: 100%;
-        margin-left: 30px; 
+        text-align: center; 
+    }
+
+    .footer-US{
+        width: 100%;
+        text-align: center;      
     }
 
     .redes{
@@ -856,6 +882,10 @@ textarea {
         font-size: 30px;
     }
 
+    .footer_pay img{
+        width: calc(50%);
+    }
+
 }
 
 /* ***********************************************480**************************************************************************** */
@@ -874,6 +904,9 @@ textarea {
     }
     .carrito{
         right: 20px;
+    }
+    .menu_navegation{
+        width:80%
     }
 
 /* ***********************************************320**************************************************************************** */
@@ -907,4 +940,6 @@ textarea {
         margin-left: 70px;
     }
 
+    
+    
 }
