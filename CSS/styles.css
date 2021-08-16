@@ -198,10 +198,12 @@ body {
 }
 .title_contact {
     color:#7b113aa2;
-    font-family: 'Lato', sans-serif;   
+    font-family: 'Montserrat', sans-serif;
     margin: 0 20px;
     padding: 30px 10px;
     font-size: 50px;
+    font-weight: 700;
+    
     
 }
 
@@ -383,6 +385,56 @@ textarea {
     font-family: 'Lato', sans-serif;
     text-align: center;
     margin-bottom: 20px;
+}
+
+
+/* *****************************************************MUJER********************************************************************* */
+/* *****************************************************lenceria********************************************************************* */
+.filter{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px ;
+
+}
+
+.menu_filter a{
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+}
+
+.category_filter{
+    display: flex;
+    align-items: center;
+}
+
+.category_filter img{
+    width: 20px;
+    height: 20px;
+    align-items: center;
+}
+
+.filter_products{
+    text-decoration: none;
+    color: rgb(168, 42, 42);
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.orderby{
+    height: 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.orderby option{
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
 }
 
 /* ************MEDIA QUERIES******************************* */
